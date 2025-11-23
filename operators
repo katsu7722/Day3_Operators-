@@ -1,0 +1,194 @@
+#Area of triangle
+base = float(input("Enter base"))
+Enter base20
+height = float(input("Enter height"))
+Enter height10
+area = 0.5 * base * height
+print("The are of the triangle is ", area)
+The are of the triangle is  100.0
+
+
+
+#Perimeter of triangle
+sidea = float(input("Enter side a"))
+Enter side a5
+sideb = float(input("Enter side b"))
+Enter side b4
+sidec = float(input("Enter side c"))
+Enter side c3
+perimeter = sidea + sideb + sidec
+print("The perimeter of triangle is ", perimeter)
+The perimeter of triangle is  12.0
+
+
+
+
+#Rectangle area
+lenghth = float(input("Enter length"))
+Enter length10
+width = float(input("Enter width"))
+Enter width20
+area = lenghth * width
+print("The area of rectangl
+
+#Rectangle perimeter
+lenghth = float(input("Enter length"))
+Enter length10
+width = float(input("Enter width"))
+Enter width20
+perimeter = 2 * lenghth + 2 * width
+print("The perimeter of rectangle is ", perimeter)
+The perimeter of rectangle is  60.0
+
+
+
+#Area and circumference of the circle
+radius = float(input("Enter redius"))
+Enter redius3
+pi = 3.14
+area = pi * radius * radius
+circumference = 2 * pi * radius
+print("The area of the ciecle is", area)
+The area of the ciecle is 28.259999999999998
+print("The circumference of the circle is", circumference)
+The circumference of the circle is 18.84
+
+
+
+
+#Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+for x in range(-10, 11):
+    y = x**2 + 6*x + 9
+    print(f"x = {x}, y = {y}")
+x = -10, y = 49
+x = -9, y = 36
+x = -8, y = 25
+x = -7, y = 16
+x = -6, y = 9
+x = -5, y = 4
+x = -4, y = 1
+x = -3, y = 0
+x = -2, y = 1
+x = -1, y = 4
+x = 0, y = 9
+x = 1, y = 16
+x = 2, y = 25
+x = 3, y = 36
+x = 4, y = 49
+x = 5, y = 64
+x = 6, y = 81
+x = 7, y = 100
+x = 8, y = 121
+x = 9, y = 144
+x = 10, y = 169
+
+
+
+#Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+print(len("python"))    
+print(len("dragon"))    
+print(len("python") > len("dragon"))
+
+
+
+#Use and operator to check if 'on' is found in both 'python' and 'dragon'
+print("on" in "python" and "on" in "dragon")
+True
+
+
+
+#I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+sentence = "I hope this course is not full of jargon."
+print("jargon" in sentence)
+True
+
+
+
+#There is no 'on' in both dragon and python
+print("on" not in "dragon" and "on" not in "dragon")
+False
+
+
+
+#Find the length of the text python and convert the value to float and convert it to string
+text = "python"
+length = len(text)
+length_float = float(length)
+length_string = str(length_float)
+print(length)
+6
+print(length_float)
+6.0
+print(length_string)
+6.0
+
+
+
+#Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print(f"{num} is even")
+else:
+    print(f"{num} is odd")
+
+
+
+#Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+floor_div = 7 // 3
+int_value = int(2.7)
+print(floor_div == int_value)
+True
+
+
+
+#Check if type of '10' is equal to type of 10
+print(type ("10") == type(10))
+False
+
+
+
+#Check if int('9.8') is equal to 10
+ x = int(float("9.8"))
+print
+
+
+
+#Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hours = float(input("Enter your hours"))  #40
+rate = float(input("Enter rate per hour"))  #28
+weekly = hours * rate
+print("Your weekly earning is ", weekly)
+Your weekly earning is  1120.0
+
+
+
+#Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+years = int(input("Enter number of years you have lived: "))
+days_in_year = 365
+hours_in_day = 24
+minutes_in_hour = 60
+seconds_in_minute = 60
+total_seconds = years * days_in_year * hours_in_day * minutes_in_hour * seconds_in_minute
+print(f"You have lived for {total_seconds} seconds.")
+
+
+
+
+
+
+#Write a Python script that displays the following table
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+
+for i in range(1, 6):
+    print(i, 1, i, i**2, i**3)
+
+#🔹 解説
+i → 1〜5 の行番号
+1 → 2列目は常に 1
+i → 3列目はそのまま i
+i**2 → 4列目（平方）
+i**3 → 5列目（立方）
